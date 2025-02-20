@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --cor-primaria: #143447;
+  --cor-secundaria: #ff0763;
+  --cor-terciaria: white;
+  --cor-do-fundo: #181414;
+  --fonte: "Ubuntu", serif;
+}
+
+body {
+  color: var(--cor-terciaria);
+  font-family: var(--fonte);
+  background-color: var(--cor-do-fundo);
+}
+
+.cabecalho {
+  padding: 3rem;
+  display: flex;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cabecalho_imagens {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 20%;
+}
+
+.cabecalho_ancoras {
+  display: flex;
+  gap: 3.5rem;
+}
+
+.ancora {
+  text-decoration: none;
+  font-size: 22px;
+  color: white;
+}
+
+.ancora:hover {
+  color: var(--cor-secundaria);
+}
