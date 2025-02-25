@@ -44,13 +44,20 @@ body {
 .ancora {
   text-decoration: none;
   font-size: 22px;
-  color: white;
+  color: var(--cor-terciaria);
   font-weight: 300;
 }
 
 .ancora:hover {
   color: var(--cor-secundaria);
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 100vh;
+}
+
 
 .home {
   display: flex;
@@ -66,9 +73,24 @@ body {
 }
 
 .home_textoSecundario {
-  font-size: 20px;
+  font-size: 25px;
   padding: 0 18rem;
   font-weight: 400;
+}
+
+.home_botao {
+  width: 40%;
+  font-size: 30px;
+  background-color: var(--cor-secundaria);
+  border-radius: 10px;
+  color: var(--cor-do-fundo);
+  margin-top: 5rem;
+}
+
+.home_botao:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  scale: 1.1;
 }
 
 .carrossel {
@@ -83,12 +105,12 @@ body {
   height: 100%;
   width: 80%;
   overflow: hidden;
-  background: rgb(255, 255, 255);
+  background: #b4154f;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 0 solid rgba(255, 255, 255, 0.4);
 }
 
 .slider_itens {
