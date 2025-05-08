@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --cor-do-fundo: rgb(255, 255, 255);
+  --cor-do-fundo:  #f2f2f2;
   --cor-primaria: #222224;
   --cor-secundaria: #ff0763;
   --fonte: "Poppins", serif;
@@ -50,38 +50,98 @@ body {
 }
 
 .home {
-  padding: 10rem 0 0 23rem;
-  width: 60%;
+  padding: 8vw 0 0 23vw; 
+  width: 90vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .home_textoPrincipal {
   font-size: 60px;
   font-weight: 450;
   margin: 0;
+  color: var(--cor-primaria);
 }
 
 .home_textoSecundario {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 400;
   margin: 0;
+  color: var(--cor-primaria);
 }
 
 .home_botao {
-  width: 40%;
-  padding: 0.3rem;
-  font-size: 30px;
+  width: 20%;
+  padding: 0.5rem 0.2rem;
+  font-size: 20px;
   background-color: var(--cor-secundaria);
-  border-radius: 10px;
+  border-radius: 7px;
   color: var(--cor-do-fundo);
   margin: 0;
   text-align: center;
+  border: 2px solid var(--cor-secundaria);
 }
 
 .home_botao:hover {
   cursor: pointer;
-  transition: 0.4s;
-  scale: 1.1;
+  background-color: var(--cor-do-fundo);
+  color: var(--cor-primaria);
+  transition: 0.2s ease-in-out;
+}
+
+#botao_topo {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 2rem;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-do-fundo);
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#botao_topo:hover {
+  background-color: var(--cor-primaria);
+}
+
+.sobre {
+  display: flex;
+}
+
+.sobre_textos {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20%;
+  align-items: flex-start;
+}
+
+.sobre_textoApresentacao {
+  font-size: 30px;
+  font-weight: 450;
+  margin: 0;
+  color: var(--cor-primaria);
+}
+
+.sobre_textosExplicativos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sobre_textoExplicativo {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: var(--cor-primaria);
+}
+
+.sobre_textoDestaque {
+  color: var(--cor-secundaria);
 }

@@ -19,14 +19,28 @@
   </header>
   <main>
     <section class="home">
-        <h3 class="home_textoSecundario">Olá, bem vindo a ring!</h3>
-        <h1 class="home_textoPrincipal ">Desenvolvemos aplicativos, sites<br> e sistemas exclusivos para o seu negócio.</h1>
-        <a class="home_botao">Saiba mais</a>
+      <h3 class="home_textoSecundario">Olá, bem vindo a ring!</h3>
+      <h1 class="home_textoPrincipal">Desenvolvemos aplicativos,<br>sites e sistemas exclusivos<br>para o seu negócio.</h1>
+      <a class="home_botao">Saiba mais</a>
     </section>
-    
+    <section class="sobre">
+      <div class="sobre_textos">
+        <h2 class="sobre_textoApresentacao">Contruindo seu negócio de forma <strong class="sobre_textoDestaque">digital e exclusiva.</strong></h2>
+        <div class="sobre_textosExplicativos">
+          <h2 class="sobre_textoExplicativo">Na Ring transformamos ideias em soluções digitais personalizadas. Você diz o que precisa, e nós cuidamos de tudo. Traduzimos o seu negócio em aplicativos e sistemas web que agregam valor para sua empresa e para seus clientes.</h1>
+          <h2 class="sobre_textoExplicativo">Verificamos o que você deseja e aplicamos exclusivamente para seu negócio, de forma personalizada. Desde o código até a interface utilizamos a técnologia mais moderna que existe, o destacando entre seus concorrentes.</h1>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
-
   </footer>
+  <button id="botao_topo" title="Voltar ao topo">↑</button>
+  <script>
+    const botao = document.getElementById("botao_topo");
+    botao.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
