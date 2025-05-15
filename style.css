@@ -8,6 +8,23 @@
   --fonte: "Poppins", serif;
 }
 
+::-webkit-scrollbar {
+ width: 10px;
+ height: 6px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: var(--cor-do-fundo);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cor-primaria);
+  border-radius: 10px;
+  height: 4px;
+}
+
 body {
   color: var(--cor-terciaria);
   font-family: var(--fonte);
@@ -50,7 +67,7 @@ body {
 }
 
 .home {
-  padding: 8vw 0 0 23vw; 
+  padding: 8vw 0 0 20vw; 
   width: 90vw;
   height: 90vh;
   display: flex;
@@ -113,6 +130,8 @@ body {
 
 .sobre {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sobre_textos {
@@ -129,6 +148,10 @@ body {
   color: var(--cor-primaria);
 }
 
+.sobre_textoDestaque {
+  color: var(--cor-secundaria);
+}
+
 .sobre_textosExplicativos {
   display: flex;
   flex-direction: column;
@@ -142,6 +165,30 @@ body {
   color: var(--cor-primaria);
 }
 
-.sobre_textoDestaque {
-  color: var(--cor-secundaria);
+.cards {
+  display: flex;
+  padding: 8rem;
+  flex-direction: column;
+}
+
+.cards_titulo {
+  color: var(--cor-primaria);
+  font-size: 30px;
+  text-align: center;
+}
+
+.cards_itens {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.card {
+  background-color: #e9e9e9;
+  padding: 2rem;
+}
+
+.card_texto {
+  font-size: 18px;
+  color: var(--cor-primaria);
 }
