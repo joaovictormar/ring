@@ -117,21 +117,28 @@ body {
   background-color: var(--cor-secundaria);
   color: var(--cor-do-fundo);
   border: none;
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 15px;
   font-size: 20px;
   cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
 }
 
 #botao_topo:hover {
   background-color: var(--cor-primaria);
+  color: var(--cor-do-fundo);
 }
+
 
 .sobre {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 4rem;
 }
 
 .sobre_textos {
@@ -142,10 +149,11 @@ body {
 }
 
 .sobre_textoApresentacao {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 450;
   margin: 0;
   color: var(--cor-primaria);
+  width: 40%;
 }
 
 .sobre_textoDestaque {
@@ -156,6 +164,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 70%;
 }
 
 .sobre_textoExplicativo {
@@ -168,6 +177,7 @@ body {
 .cards {
   display: flex;
   padding: 8rem;
+  gap: 5rem;
   flex-direction: column;
 }
 
@@ -180,7 +190,7 @@ body {
 .cards_itens {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .card {
@@ -188,7 +198,19 @@ body {
   padding: 2rem;
 }
 
-.card_texto {
-  font-size: 18px;
+.card_imagem {
+  width: 10%;
+  padding-bottom: 2rem;
+}
+
+.card_titulo {
+  font-size: 22px;
   color: var(--cor-primaria);
+  font-weight: 550;
+}
+
+.card_subtitulo {
+  font-size: 15px;
+  color: var(--cor-primaria);
+  font-weight: 400;
 }

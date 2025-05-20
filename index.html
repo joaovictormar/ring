@@ -35,16 +35,19 @@
         <h1 class="cards_titulo">ETAPAS DO DESENVOLVIMENTO DE SOFTWARE</h1> 
         <div class="cards_itens">
           <div class="card">
-            <img>
-            <h2 class="card_texto">EXEMPLO DE TEXTO PARA COLOCAR NO CARD</h2>
+            <img class="card_imagem" src="assets/documento.png" alt="Imagem de pasta de documentos">
+            <h2 class="card_titulo">Leve seu negócio para o digital com inteligência</h2>
+            <h3 class="card_subtitulo">Vamos trabalhar juntos para identificar a abordagem ideal na criação do seu sistema ou aplicativo.</h3>
           </div>
           <div class="card">
-            <img>
-            <h2 class="card_texto">EXEMPLO DE TEXTO PARA COLOCAR NO CARD</h2>
+            <img class="card_imagem" src="assets/candle.png" alt="Imagem de clandle">
+            <h2 class="card_titulo">Ofereça uma experiência única aos seus clientes</h2>
+            <h3 class="card_subtitulo">Unimos tecnologia e design personalizado para desenvolver soluções eficazes, com a identidade do seu negócio.</h3>
           </div>
           <div class="card">
-            <img>
-            <h2 class="card_texto">EXEMPLO DE TEXTO PARA COLOCAR NO CARD</h2>
+            <img class="card_imagem" src="assets/user.png" alt="Imagem de usuário">
+            <h2 class="card_titulo">Tenha um suporte sempre que precisar</h2>
+            <h3 class="card_subtitulo">Estamos aqui para encarar os desafios diários ao seu lado, oferecendo apoio verdadeiro e contínuo.</h3>
           </div>
         </div>      
       </div>
@@ -55,6 +58,17 @@
   <button id="botao_topo" title="Voltar ao topo">↑</button>
   <script>
     const botao = document.getElementById("botao_topo");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        botao.style.opacity = "1";
+        botao.style.pointerEvents = "auto";
+      } else {
+        botao.style.opacity = "0";
+        botao.style.pointerEvents = "none";
+      }
+    });
+
     botao.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
